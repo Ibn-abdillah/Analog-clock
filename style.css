@@ -1,0 +1,99 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: salmon;
+    font-family: lucida calligraphy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    z-index: 2;
+}
+.clock{
+    position: relative;
+    background-color: khaki;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid blue;
+    box-shadow: 2px 5px 25px green;
+}
+.numbers div{
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 3px 2px black;
+}
+.twelve{
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.three{
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.six{
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nine{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrows{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.arrows::before{
+    content: " ";
+    width: 25px;
+    height: 25px;
+    background: green;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    z-index: 4;
+}
+.arrows div{
+    background-color: white;
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0;
+}
+.arrows .hour{
+    height: 90px;
+    width: 6px;
+    background: green;
+    transform: rotate(30deg);
+}
+.arrows .minute{
+    height: 110px;
+    width: 6px;
+    background: purple;
+    transform: rotate(45deg);
+}
+.arrows .second{
+    height: 120px;
+    width: 6px;
+    background: peru;
+    transform: rotate(120deg);
+}
